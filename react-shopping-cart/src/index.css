@@ -22,7 +22,17 @@ body,
   margin: 0;
 }
 
+body,
+input,
+select,
+textarea {
+  font-size: 1.6rem;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .grid-container {
+  height: 100%;
   display: grid;
 
   grid-template-areas:
@@ -37,9 +47,21 @@ body,
 header {
   grid-area: header;
 
+  color: white;
+  display: flex;
+  padding: 1.5rem;
+  align-items: center;
   background-color: #203040;
 }
 
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: orange;
+}
 main {
   grid-area: main;
 }
@@ -47,4 +69,9 @@ main {
 footer {
   background-color: #203040;
   grid-area: footer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
